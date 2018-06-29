@@ -1,4 +1,4 @@
-from mongoengine import Document, queryset_manager
+from mongoengine import Document
 from mongoengine.fields import (
     DateTimeField, StringField
 )

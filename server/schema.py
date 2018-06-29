@@ -1,5 +1,5 @@
 import graphene
-from graphene_mongo import MongoengineConnectionField, MongoengineObjectType
+from graphene_mongo import MongoengineObjectType
 from models import Posts as PostsModel
 
 class Posts(MongoengineObjectType):

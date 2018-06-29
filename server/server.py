@@ -1,9 +1,11 @@
 from flask import Flask, redirect, url_for
 from flask_graphql import GraphQLView
 from schema import schema
-from db import init_db, db
+from db import db
+from config import DevelopmentConfig
 
 app = Flask(__name__)
+app.config.from_object('config.DevelopmentConfig')
 
 @app.route('/')
 def redirect_to_graphQL():

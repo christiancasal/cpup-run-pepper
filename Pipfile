@@ -16,3 +16,6 @@ mongoengine = "*"
 
 [requires]
 python_version = "3.6"
+
+[scripts]
+start = "python ./server/server.py"
